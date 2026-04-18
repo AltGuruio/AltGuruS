@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Home",
+    "url": "index.html",
+    "keywords": ["home", "altguru", "crypto", "forex", "signals", "telegram", "trading", "plan", "risk", "how it works", "pricing", "join"]
+  },
+  {
+    "title": "Results",
+    "url": "results.html",
+    "keywords": ["results", "performance", "track record", "crypto futures", "futures", "pnl", "logs", "history"]
+  },
+  {
+    "title": "Results — Spot",
+    "url": "results-spot.html",
+    "keywords": ["spot", "results", "crypto spot", "performance"]
+  },
+  {
+    "title": "Results — Forex",
+    "url": "results-forex.html",
+    "keywords": ["forex", "fx", "results", "performance", "currencies"]
+  },
+  {
+    "title": "Signals",
+    "url": "signals.html",
+    "keywords": ["signals", "trade ideas", "crypto signals", "futures", "spot", "telegram", "vip", "subscription", "levels", "risk"]
+  },
+  {
+    "title": "Bots",
+    "url": "bots.html",
+    "keywords": ["bots", "trading bot", "automation", "crypto bot", "forex bot", "bundler", "wallet", "token", "strategies"]
+  },
+  {
+    "title": "Pricing",
+    "url": "pricing.html",
+    "keywords": ["pricing", "plans", "cost", "subscribe", "monthly", "vip", "futures", "bundler", "crypto bot", "forex bot", "payment"]
+  },
+  {
+    "title": "Pay with crypto",
+    "url": "pay.html",
+    "keywords": ["pay", "crypto payment", "usdt", "trc20", "transaction", "txid", "activation", "billing", "support"]
+  },
+  {
+    "title": "About",
+    "url": "about.html",
+    "keywords": ["about", "team", "who we are", "risk", "disclaimer", "support", "altguru"]
+  },
+  {
+    "title": "Contact us",
+    "url": "contact.html",
+    "keywords": ["contact", "contact us", "email", "telegram", "message", "support", "help", "reach"]
+  },
+  {
+    "title": "News",
+    "url": "news.html",
+    "keywords": ["news", "updates", "announcements", "blog"]
+  },
+  {
+    "title": "Log in",
+    "url": "join.html",
+    "keywords": ["login", "log in", "join", "account", "member", "access", "sign in"]
+  },
+  {
+    "title": "Privacy policy",
+    "url": "privacy.html",
+    "keywords": ["privacy", "data", "gdpr", "cookies", "ip", "analytics", "tracking", "policy"]
+  },
+  {
+    "title": "Terms of Service",
+    "url": "terms.html",
+    "keywords": ["terms", "legal", "conditions", "tos", "agreement", "subscription", "refund", "disclaimer", "liability"]
+  }
+]

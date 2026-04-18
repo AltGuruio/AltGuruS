@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bots | AltGuru Signals</title>
+  <meta
+    name="description"
+    content="AltGuru crypto and forex trading bots with customizable strategies, plus the Bundler for wallets and token launches."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-bots">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="nav-brand">
+        <a class="logo" href="index.html">
+          <img src="AltGuru_PP.png" alt="AltGuru Signals" class="logo-image" />
+        </a>
+        <div class="nav-search-pill" role="search">
+          <svg class="nav-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" />
+            <path d="M20 20l-4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <input type="search" class="nav-search-input" placeholder="Search…" aria-label="Search" autocomplete="off" />
+        </div>
+      </div>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="results.html">Results</a>
+        <a href="signals.html">Signals</a>
+        <a href="bots.html" class="active">Bots</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="news.html">News</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
+      <div class="nav-actions">
+        <button class="lang-pill" aria-label="Language">EN</button>
+        <a href="join.html" class="login-pill">Log in</a>
+        <a href="pricing.html" class="join-pill">Join</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero hero-bots">
+      <div class="container hero-grid">
+        <div class="hero-copy bots-hero-copy">
+          <h1>Automate trades — keep control of your strategy</h1>
+          <p class="sub bots-hero-sub">
+            Our <strong class="bots-key">crypto</strong> and <strong class="bots-key">forex</strong> bots can execute for you
+            while you <strong class="bots-key">shape the rules</strong>: change parameters, risk, and logic so automation
+            matches how you actually trade.
+          </p>
+          <ul class="bots-hero-points">
+            <li>Hands-off execution when you want it</li>
+            <li>Customize strategy settings to your style</li>
+            <li>Bundler for multi-wallet workflows and token launches</li>
+          </ul>
+          <div class="hero-actions">
+            <a href="pricing.html" class="btn btn-cta">Get access</a>
+          </div>
+        </div>
+        <div class="bots-hero-visual" aria-hidden="true">
+          <div class="bots-viz-glow"></div>
+          <div class="bots-viz-panel">
+            <div class="bots-viz-panel-head">
+              <span class="bots-viz-dot"></span>
+              <span class="bots-viz-dot"></span>
+              <span class="bots-viz-dot"></span>
+              <span class="bots-viz-title">Strategy</span>
+            </div>
+            <div class="bots-viz-rows">
+              <div class="bots-viz-row">
+                <span class="bots-viz-label">Risk</span>
+                <span class="bots-viz-track"><span class="bots-viz-fill"></span></span>
+              </div>
+              <div class="bots-viz-row">
+                <span class="bots-viz-label">Size</span>
+                <span class="bots-viz-track bots-viz-track-wide"><span class="bots-viz-fill bots-viz-fill-alt"></span></span>
+              </div>
+              <div class="bots-viz-row bots-viz-row-toggle">
+                <span class="bots-viz-label">Auto</span>
+                <span class="bots-viz-switch" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="bots-viz-spark">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="bots-viz-chip">₿</div>
+          <div class="bots-viz-chip bots-viz-chip-fx">FX</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bots-products-section" aria-labelledby="bots-products-heading">
+      <div class="container">
+        <header class="bots-section-head">
+          <h2 id="bots-products-heading">AltGuru Bots</h2>
+          <p>
+            Two execution-focused bots plus a separate bundler tool — each built for traders who want power without giving
+            up configurability.
+          </p>
+        </header>
+        <div class="bots-products-grid">
+          <article class="bots-product-card">
+            <div class="bots-product-icon bots-product-icon-crypto" aria-hidden="true">
+              <span>₿</span>
+            </div>
+            <h3>Crypto trading bot</h3>
+            <p>
+              Automate order flow on your connected crypto setup. Adjust strategy inputs—risk, sizing, filters, and
+              behavior—so the bot follows rules you define, not a black box.
+            </p>
+          </article>
+          <article class="bots-product-card">
+            <div class="bots-product-icon bots-product-icon-forex" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M7 16V4M7 4L3 8M7 4l4 4M17 8v12M17 20l4-4M17 20l-4-4" />
+              </svg>
+            </div>
+            <h3>Forex trading bot</h3>
+            <p>
+              Run disciplined, rules-based execution on forex. Customize the strategy to your sessions, pairs, and risk
+              tolerance while the bot handles the repetitive work.
+            </p>
+          </article>
+          <article class="bots-product-card bots-product-card-bundler">
+            <div class="bots-product-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+                <rect x="2" y="6" width="8" height="14" rx="2" />
+                <rect x="14" y="6" width="8" height="14" rx="2" />
+                <path d="M6 6V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2M10 12h4" />
+              </svg>
+            </div>
+            <h3>Bundler</h3>
+            <p class="bots-product-tagline">Wallets &amp; token launches</p>
+            <p>
+              A utility-focused tool to generate multiple wallets and streamline token launch workflows from one place.
+              Built for operators who need scale and repeatability — not a substitute for due diligence.
+            </p>
+          </article>
+        </div>
+
+        <div class="bots-how-block" aria-labelledby="bots-how-heading">
+          <h2 id="bots-how-heading" class="bots-how-title">How it works</h2>
+          <p class="bots-how-sub">
+            From first setup to live automation — the same straightforward flow whether you trade crypto, forex, or use
+            the Bundler.
+          </p>
+          <ol class="bots-how-steps">
+            <li class="bots-how-step">
+              <span class="bots-how-num" aria-hidden="true">1</span>
+              <div class="bots-how-step-body">
+                <h3>Choose your tool</h3>
+                <p>Pick the crypto bot, forex bot, or Bundler depending on what you want to automate or launch.</p>
+              </div>
+            </li>
+            <li class="bots-how-step">
+              <span class="bots-how-num" aria-hidden="true">2</span>
+              <div class="bots-how-step-body">
+                <h3>Connect &amp; set up</h3>
+                <p>Link your exchange, broker, or workflow so the software can work with your real environment.</p>
+              </div>
+            </li>
+            <li class="bots-how-step">
+              <span class="bots-how-num" aria-hidden="true">3</span>
+              <div class="bots-how-step-body">
+                <h3>Customize your strategy</h3>
+                <p>
+                  Tune risk, sizing, filters, and logic for trading bots — or configure bundling and launch steps so
+                  everything matches your plan.
+                </p>
+              </div>
+            </li>
+            <li class="bots-how-step">
+              <span class="bots-how-num" aria-hidden="true">4</span>
+              <div class="bots-how-step-body">
+                <h3>Go live &amp; refine</h3>
+                <p>Run automation, watch results, and adjust parameters over time without losing control.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="bots-value-block" aria-labelledby="bots-value-heading">
+          <div class="bots-value-intro">
+            <h2 class="bots-value-title-line" id="bots-value-heading">Join the future of trading today.</h2>
+            <p class="bots-value-subtitle">Serious execution without giving up your edge</p>
+          </div>
+          <div class="bots-value-grid">
+            <div class="bots-value-copy">
+              <p>
+                AltGuru bots pair with the same ecosystem you already know: clear trade logic, room to tune parameters,
+                and automation that runs the repetitive work while you stay accountable for risk and outcomes.
+              </p>
+              <p>
+                Use crypto and forex bots to act on ideas faster, keep sizing consistent, and iterate your strategy over
+                time — alongside signals, community support, and the Bundler when you need wallet and launch tooling in
+                one stack.
+              </p>
+            </div>
+            <div class="bots-value-visual" aria-hidden="true">
+              <!-- Brand: #39d353 / #95f4a4 / #111b36 / #24345f — richer depth, green-forward charts, AltGuru glow -->
+              <svg class="bots-value-art" viewBox="0 0 440 400" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+                <defs>
+                  <radialGradient id="bvr-scene-glow" cx="50%" cy="42%" r="0.55">
+                    <stop offset="0%" stop-color="#39d353" stop-opacity="0.09"/>
+                    <stop offset="55%" stop-color="#39d353" stop-opacity="0.02"/>
+                    <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
+                  </radialGradient>
+                  <linearGradient id="bvr-floor" x1="50%" y1="0%" x2="50%" y2="100%">
+                    <stop offset="0%" stop-color="#020810" stop-opacity="0.6"/>
+                    <stop offset="100%" stop-color="#020810" stop-opacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="bvr-tier" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#1a2848"/>
+                    <stop offset="35%" stop-color="#111b36"/>
+                    <stop offset="100%" stop-color="#070c18"/>
+                  </linearGradient>
+                  <linearGradient id="bvr-tier-face" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#24345f" stop-opacity="0.55"/>
+                    <stop offset="100%" stop-color="#24345f" stop-opacity="0.15"/>
+                  </linearGradient>
+                  <linearGradient id="bvr-tier-edge" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#39d353" stop-opacity="0.5"/>
+                    <stop offset="35%" stop-color="#95f4a4" stop-opacity="0.45"/>
+                    <stop offset="70%" stop-color="#5eb8ff" stop-opacity="0.35"/>
+                    <stop offset="100%" stop-color="#39d353" stop-opacity="0.45"/>
+                  </linearGradient>
+                  <linearGradient id="bvr-beam" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+                    <stop offset="25%" stop-color="#95f4a4" stop-opacity="0.35"/>
+                    <stop offset="55%" stop-color="#39d353" stop-opacity="0.22"/>
+                    <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="bvr-panel" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#111b36"/>
+                    <stop offset="100%" stop-color="#070c18"/>
+                  </linearGradient>
+                  <linearGradient id="bvr-bar" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#95f4a4"/>
+                    <stop offset="45%" stop-color="#39d353"/>
+                    <stop offset="100%" stop-color="#2a9f42"/>
+                  </linearGradient>
+                  <linearGradient id="bvr-bar-hi" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="bvr-area" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#39d353" stop-opacity="0.55"/>
+                    <stop offset="45%" stop-color="#39d353" stop-opacity="0.2"/>
+                    <stop offset="100%" stop-color="#111b36" stop-opacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="bvr-line" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#95f4a4"/>
+                    <stop offset="100%" stop-color="#39d353"/>
+                  </linearGradient>
+                  <linearGradient id="bvr-circuit" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#39d353" stop-opacity="0.5"/>
+                    <stop offset="50%" stop-color="#5eb8ff" stop-opacity="0.45"/>
+                    <stop offset="100%" stop-color="#39d353" stop-opacity="0.45"/>
+                  </linearGradient>
+                  <radialGradient id="bvr-btc" cx="35%" cy="35%" r="0.65">
+                    <stop offset="0%" stop-color="#ffffff"/>
+                    <stop offset="50%" stop-color="#e8f4ff"/>
+                    <stop offset="100%" stop-color="#b8d0e8"/>
+                  </radialGradient>
+                  <radialGradient id="bvr-btc-halo" cx="50%" cy="50%" r="0.5">
+                    <stop offset="0%" stop-color="#39d353" stop-opacity="0.35"/>
+                    <stop offset="70%" stop-color="#39d353" stop-opacity="0.06"/>
+                    <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
+                  </radialGradient>
+                  <linearGradient id="bvr-top-slab" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#95f4a4" stop-opacity="0.35"/>
+                    <stop offset="100%" stop-color="#39d353" stop-opacity="0.28"/>
+                  </linearGradient>
+                </defs>
+                <ellipse cx="220" cy="200" rx="200" ry="160" fill="url(#bvr-scene-glow)"/>
+                <ellipse cx="220" cy="328" rx="178" ry="20" fill="url(#bvr-floor)"/>
+                <g stroke="url(#bvr-circuit)" stroke-width="1.15" stroke-linecap="round" opacity="0.65">
+                  <path d="M 44 298 L 118 282 L 178 292 L 220 276"/>
+                  <path d="M 220 276 L 272 290 L 332 280 L 396 292"/>
+                  <path d="M 118 282 L 104 318 L 168 328 L 220 310 L 288 322 L 352 306"/>
+                </g>
+                <g>
+                  <circle cx="44" cy="298" r="3.5" fill="#39d353" opacity="0.85"/>
+                  <circle cx="118" cy="282" r="3" fill="#95f4a4" opacity="0.75"/>
+                  <circle cx="220" cy="276" r="3.5" fill="#39d353" opacity="0.9"/>
+                  <circle cx="332" cy="280" r="3" fill="#95f4a4" opacity="0.7"/>
+                  <circle cx="396" cy="292" r="3.5" fill="#39d353" opacity="0.8"/>
+                  <circle cx="168" cy="328" r="2.5" fill="#39d353" opacity="0.6"/>
+                  <circle cx="288" cy="322" r="2.5" fill="#95f4a4" opacity="0.55"/>
+                </g>
+                <g opacity="0.62">
+                  <circle cx="76" cy="112" r="19" fill="url(#bvr-btc)" stroke="rgba(57,211,83,0.4)" stroke-width="1.25"/>
+                  <text x="76" y="119" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="800" fill="#0f1c30">₿</text>
+                  <circle cx="372" cy="122" r="16" fill="url(#bvr-btc)" stroke="rgba(57,211,83,0.35)" stroke-width="1.25"/>
+                  <text x="372" y="128" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="800" fill="#0f1c30">₿</text>
+                </g>
+                <!-- Left panel: volume bars + brand chrome -->
+                <g transform="translate(26, 122) skewX(-10)">
+                  <rect width="122" height="112" rx="15" fill="url(#bvr-panel)" stroke="#24345f" stroke-width="1"/>
+                  <rect x="1" y="1" width="120" height="110" rx="14" fill="none" stroke="rgba(57,211,83,0.18)" stroke-width="1"/>
+                  <rect x="0" y="0" width="122" height="28" rx="13" fill="#ffffff" fill-opacity="0.04"/>
+                  <circle cx="14" cy="14" r="4" fill="#39d353"/>
+                  <text x="26" y="18" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700" fill="#9ba8d2" letter-spacing="0.06em">EXECUTION</text>
+                  <g transform="translate(15, 40)">
+                    <g>
+                      <rect x="0" y="34" width="15" height="30" rx="3" fill="url(#bvr-bar)"/>
+                      <rect x="1" y="35" width="13" height="8" rx="2" fill="url(#bvr-bar-hi)"/>
+                    </g>
+                    <g>
+                      <rect x="20" y="14" width="15" height="50" rx="3" fill="url(#bvr-bar)"/>
+                      <rect x="21" y="15" width="13" height="10" rx="2" fill="url(#bvr-bar-hi)"/>
+                    </g>
+                    <g>
+                      <rect x="40" y="24" width="15" height="40" rx="3" fill="url(#bvr-bar)" opacity="0.95"/>
+                      <rect x="41" y="25" width="13" height="9" rx="2" fill="url(#bvr-bar-hi)"/>
+                    </g>
+                    <g>
+                      <rect x="60" y="8" width="15" height="56" rx="3" fill="url(#bvr-bar)"/>
+                      <rect x="61" y="9" width="13" height="11" rx="2" fill="url(#bvr-bar-hi)"/>
+                    </g>
+                    <g>
+                      <rect x="80" y="28" width="15" height="36" rx="3" fill="url(#bvr-bar)" opacity="0.92"/>
+                      <rect x="81" y="29" width="13" height="8" rx="2" fill="url(#bvr-bar-hi)"/>
+                    </g>
+                  </g>
+                </g>
+                <!-- Right panel: performance curve -->
+                <g transform="translate(294, 126) skewX(-10)">
+                  <rect width="122" height="112" rx="15" fill="url(#bvr-panel)" stroke="#24345f" stroke-width="1"/>
+                  <rect x="1" y="1" width="120" height="110" rx="14" fill="none" stroke="rgba(57,211,83,0.18)" stroke-width="1"/>
+                  <rect x="0" y="0" width="122" height="28" rx="13" fill="#ffffff" fill-opacity="0.04"/>
+                  <circle cx="14" cy="14" r="4" fill="#39d353"/>
+                  <text x="26" y="18" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700" fill="#9ba8d2" letter-spacing="0.06em">PERFORMANCE</text>
+                  <path
+                    d="M 14 90 L 14 56 C 32 60 48 36 64 42 C 82 48 92 34 108 38 L 108 90 Z"
+                    fill="url(#bvr-area)"
+                  />
+                  <path
+                    d="M 14 56 C 32 60 48 36 64 42 C 82 48 92 34 108 38"
+                    stroke="url(#bvr-line)"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="108" cy="38" r="5" fill="#0b1020" stroke="#95f4a4" stroke-width="2"/>
+                </g>
+                <!-- Pedestal: depth + brand rim -->
+                <g>
+                  <rect x="74" y="288" width="292" height="24" rx="9" fill="#000510" fill-opacity="0.35" transform="translate(2, 4)"/>
+                  <rect x="72" y="284" width="296" height="24" rx="9" fill="url(#bvr-tier)" stroke="url(#bvr-tier-edge)" stroke-width="1"/>
+                  <rect x="76" y="286" width="288" height="8" rx="2" fill="url(#bvr-tier-face)" opacity="0.5"/>
+                  <rect x="92" y="260" width="256" height="22" rx="8" fill="#000510" fill-opacity="0.3" transform="translate(2, 3)"/>
+                  <rect x="90" y="262" width="260" height="22" rx="8" fill="url(#bvr-tier)" stroke="url(#bvr-tier-edge)" stroke-width="1"/>
+                  <rect x="94" y="264" width="252" height="7" rx="2" fill="url(#bvr-tier-face)" opacity="0.45"/>
+                  <rect x="110" y="240" width="220" height="20" rx="7" fill="#000510" fill-opacity="0.28" transform="translate(2, 2)"/>
+                  <rect x="108" y="242" width="224" height="20" rx="7" fill="url(#bvr-tier)" stroke="url(#bvr-tier-edge)" stroke-width="1"/>
+                  <rect x="128" y="222" width="184" height="18" rx="6" fill="#000510" fill-opacity="0.25" transform="translate(1, 2)"/>
+                  <rect x="126" y="224" width="188" height="18" rx="6" fill="url(#bvr-tier)" stroke="url(#bvr-tier-edge)" stroke-width="1"/>
+                  <rect x="176" y="204" width="88" height="16" rx="6" fill="url(#bvr-top-slab)" stroke="rgba(149,244,164,0.55)" stroke-width="1"/>
+                  <rect x="180" y="206" width="80" height="6" rx="2" fill="#ffffff" fill-opacity="0.25"/>
+                </g>
+                <rect x="202" y="112" width="36" height="100" rx="18" fill="url(#bvr-beam)" opacity="0.92"/>
+                <ellipse cx="220" cy="112" rx="56" ry="22" fill="url(#bvr-btc-halo)"/>
+                <ellipse cx="220" cy="112" rx="48" ry="18" fill="rgba(149,244,164,0.1)"/>
+                <circle cx="220" cy="96" r="42" fill="url(#bvr-btc)" stroke="rgba(149,244,164,0.55)" stroke-width="1.5"/>
+                <circle cx="220" cy="96" r="42" fill="none" stroke="rgba(57,211,83,0.35)" stroke-width="2" opacity="0.7"/>
+                <circle cx="220" cy="96" r="48" fill="none" stroke="rgba(57,211,83,0.15)" stroke-width="3"/>
+                <text x="220" y="108" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="38" font-weight="900" fill="#0f1c30">₿</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bots-cta-section" aria-labelledby="bots-cta-heading">
+      <div class="container">
+        <div class="bots-cta-card">
+          <div class="bots-cta-chart-pattern" aria-hidden="true"></div>
+          <div class="bots-cta-inner">
+            <div class="bots-cta-copy">
+              <h2 id="bots-cta-heading">Ready to run bots your way?</h2>
+              <p>
+                Pair automation with signals, or use the bundler for your launch stack — start from pricing or reach out
+                on Telegram for setup questions.
+              </p>
+              <a href="pricing.html" class="btn btn-cta bots-cta-btn-pill">View pricing</a>
+            </div>
+            <div class="bots-cta-viz" aria-hidden="true">
+              <div class="bots-cta-viz-glow"></div>
+              <svg
+                class="bots-cta-viz-art"
+                viewBox="0 0 220 200"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                aria-hidden="true"
+              >
+                <defs>
+                  <radialGradient id="bcta-scene" cx="50%" cy="42%" r="0.62">
+                    <stop offset="0%" stop-color="#39d353" stop-opacity="0.22" />
+                    <stop offset="55%" stop-color="#39d353" stop-opacity="0.07" />
+                    <stop offset="100%" stop-color="#39d353" stop-opacity="0" />
+                  </radialGradient>
+                  <linearGradient id="bcta-card" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#141c34" />
+                    <stop offset="100%" stop-color="#080e1a" />
+                  </linearGradient>
+                  <linearGradient id="bcta-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#95f4a4" stop-opacity="0.55" />
+                    <stop offset="50%" stop-color="#39d353" stop-opacity="0.45" />
+                    <stop offset="100%" stop-color="#95f4a4" stop-opacity="0.4" />
+                  </linearGradient>
+                  <linearGradient id="bcta-bar" x1="0%" y1="100%" x2="0%" y2="0%">
+                    <stop offset="0%" stop-color="#2a9f42" />
+                    <stop offset="55%" stop-color="#39d353" />
+                    <stop offset="100%" stop-color="#95f4a4" />
+                  </linearGradient>
+                  <linearGradient id="bcta-line" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#39d353" />
+                    <stop offset="100%" stop-color="#95f4a4" />
+                  </linearGradient>
+                  <filter id="bcta-soft" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="0.8" result="b" />
+                    <feMerge>
+                      <feMergeNode in="b" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
+                <ellipse cx="110" cy="98" rx="102" ry="90" fill="url(#bcta-scene)" />
+                <circle cx="110" cy="98" r="86" fill="none" stroke="url(#bcta-ring)" stroke-width="1.25" opacity="0.9" />
+                <g>
+                  <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    from="0 110 98"
+                    to="360 110 98"
+                    dur="56s"
+                    repeatCount="indefinite"
+                  />
+                  <circle
+                    cx="110"
+                    cy="98"
+                    r="96"
+                    fill="none"
+                    stroke="#39d353"
+                    stroke-opacity="0.22"
+                    stroke-width="1"
+                    stroke-dasharray="5 12"
+                    stroke-linecap="round"
+                  />
+                </g>
+                <path
+                  d="M 36 128 C 70 88, 150 88, 184 128"
+                  fill="none"
+                  stroke="#39d353"
+                  stroke-opacity="0.12"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                />
+                <rect
+                  x="46"
+                  y="48"
+                  width="128"
+                  height="102"
+                  rx="15"
+                  fill="url(#bcta-card)"
+                  stroke="rgba(149, 244, 164, 0.22)"
+                  stroke-width="1"
+                />
+                <line x1="46" y1="72" x2="174" y2="72" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+                <circle cx="60" cy="60" r="3.2" fill="#39d353" opacity="0.55" />
+                <circle cx="72" cy="60" r="3.2" fill="#95f4a4" opacity="0.35" />
+                <circle cx="84" cy="60" r="3.2" fill="rgba(255,255,255,0.12)" />
+                <rect x="98" y="57" width="64" height="6" rx="3" fill="rgba(255,255,255,0.05)" />
+                <path
+                  d="M 56 90 L 72 80 L 88 85 L 104 72 L 120 78 L 136 66 L 152 70 L 168 62"
+                  fill="none"
+                  stroke="url(#bcta-line)"
+                  stroke-width="2.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  filter="url(#bcta-soft)"
+                />
+                <circle cx="168" cy="62" r="4" fill="#39d353" opacity="0.95" />
+                <circle cx="168" cy="62" r="7" stroke="#39d353" stroke-opacity="0.25" stroke-width="1" />
+                <rect x="58" y="118" width="11" height="24" rx="2.5" fill="url(#bcta-bar)" opacity="0.82" />
+                <rect x="74" y="108" width="11" height="34" rx="2.5" fill="url(#bcta-bar)" />
+                <rect x="90" y="98" width="11" height="44" rx="2.5" fill="url(#bcta-bar)" />
+                <rect x="106" y="104" width="11" height="38" rx="2.5" fill="url(#bcta-bar)" opacity="0.92" />
+                <rect x="122" y="92" width="11" height="50" rx="2.5" fill="url(#bcta-bar)" />
+                <rect x="138" y="110" width="11" height="32" rx="2.5" fill="url(#bcta-bar)" opacity="0.78" />
+                <g opacity="0.9">
+                  <path
+                    d="M 158 132 L 172 118 L 196 128 L 182 142 Z"
+                    fill="rgba(8, 14, 26, 0.85)"
+                    stroke="rgba(149, 244, 164, 0.35)"
+                    stroke-width="1"
+                  />
+                  <circle cx="172" cy="118" r="3.5" fill="#95f4a4" opacity="0.9" />
+                  <circle cx="196" cy="128" r="3.5" fill="#39d353" opacity="0.9" />
+                  <circle cx="182" cy="142" r="3.5" fill="#39d353" opacity="0.65" />
+                  <path
+                    d="M 172 118 L 196 128 M 196 128 L 182 142 M 182 142 L 172 118"
+                    stroke="rgba(57, 211, 83, 0.35)"
+                    stroke-width="1"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section bots-faq-section" aria-labelledby="bots-faq-title">
+      <div class="container">
+        <h2 class="faq-title" id="bots-faq-title">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <article class="faq-item">
+            <button
+              type="button"
+              class="faq-trigger"
+              id="bots-faq-trigger-1"
+              aria-expanded="false"
+              aria-controls="bots-faq-panel-1"
+            >
+              <span class="faq-number">01</span>
+              <span class="faq-question">Do I need AltGuru Signals to use the trading bots?</span>
+              <span class="faq-arrow" aria-hidden="true"
+                ><svg class="faq-arrow-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></span>
+            </button>
+            <div class="faq-panel" id="bots-faq-panel-1" role="region" aria-labelledby="bots-faq-trigger-1">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">
+                  No. You can run bots with your own rules and risk settings. Many members pair them with signals for
+                  faster execution, but it is not required.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button
+              type="button"
+              class="faq-trigger"
+              id="bots-faq-trigger-2"
+              aria-expanded="false"
+              aria-controls="bots-faq-panel-2"
+            >
+              <span class="faq-number">02</span>
+              <span class="faq-question">Can I really customize the strategy?</span>
+              <span class="faq-arrow" aria-hidden="true"
+                ><svg class="faq-arrow-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></span>
+            </button>
+            <div class="faq-panel" id="bots-faq-panel-2" role="region" aria-labelledby="bots-faq-trigger-2">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">
+                  Yes. You adjust risk, sizing, filters, and behavior so automation follows logic you define — not a single
+                  preset you cannot change.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button
+              type="button"
+              class="faq-trigger"
+              id="bots-faq-trigger-3"
+              aria-expanded="false"
+              aria-controls="bots-faq-panel-3"
+            >
+              <span class="faq-number">03</span>
+              <span class="faq-question">What is the Bundler compared to the trading bots?</span>
+              <span class="faq-arrow" aria-hidden="true"
+                ><svg class="faq-arrow-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></span>
+            </button>
+            <div class="faq-panel" id="bots-faq-panel-3" role="region" aria-labelledby="bots-faq-trigger-3">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">
+                  The crypto and forex bots focus on trade execution and automation. The Bundler is a separate tool for
+                  generating multiple wallets and streamlining token launch workflows — not for placing market trades.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button
+              type="button"
+              class="faq-trigger"
+              id="bots-faq-trigger-4"
+              aria-expanded="false"
+              aria-controls="bots-faq-panel-4"
+            >
+              <span class="faq-number">04</span>
+              <span class="faq-question">How do I connect my exchange or broker?</span>
+              <span class="faq-arrow" aria-hidden="true"
+                ><svg class="faq-arrow-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></span>
+            </button>
+            <div class="faq-panel" id="bots-faq-panel-4" role="region" aria-labelledby="bots-faq-trigger-4">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">
+                  After you subscribe, onboarding walks you through linking the accounts or APIs your setup supports. Exact
+                  steps depend on your venue — follow the secure setup in your member area or Telegram.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button
+              type="button"
+              class="faq-trigger"
+              id="bots-faq-trigger-5"
+              aria-expanded="false"
+              aria-controls="bots-faq-panel-5"
+            >
+              <span class="faq-number">05</span>
+              <span class="faq-question">How do I get started?</span>
+              <span class="faq-arrow" aria-hidden="true"
+                ><svg class="faq-arrow-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></span>
+            </button>
+            <div class="faq-panel" id="bots-faq-panel-5" role="region" aria-labelledby="bots-faq-trigger-5">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">
+                  Use <a href="pricing.html">Pricing</a> to choose a plan, then <a href="pricing.html">Join</a> to complete
+                  access. You can also reach out on Telegram if you need help choosing crypto vs forex vs Bundler.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer site-footer-home">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-brand">
+            <img src="AltGuru_PP.png" alt="" class="footer-brand-logo" />
+            <span class="footer-brand-wordmark">ALTGURU</span>
+          </a>
+          <div class="footer-socials" aria-label="Social links">
+            <a
+              class="footer-social-link"
+              href="https://t.me/altguruio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Telegram"
+            >
+              <img class="footer-social-icon" src="assets/icons/telegram-Icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://x.com/AltGuruio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+            >
+              <img class="footer-social-icon" src="assets/icons/x-icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://www.instagram.com/altguru.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img class="footer-social-icon" src="assets/icons/instagram-icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://www.youtube.com/@AltGuruio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube @AltGuruio"
+              title="YouTube @AltGuruio"
+            >
+              <img class="footer-social-icon" src="assets/icons/youtube-icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <a href="results.html">Results</a>
+          <a href="news.html">News</a>
+          <a href="./faqs.html">FAQs</a>
+          <a href="signals.html">Signals</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p class="footer-muted">Telegram Channel</p>
+          <p>@AltGuruio</p>
+          <p class="footer-muted">Telegram support</p>
+          <p>@AltGuruSupport</p>
+        </div>
+      </div>
+
+      <div class="footer-disclosure">
+        <h3>Disclaimer</h3>
+        <p>
+          Trading decisions are yours alone. AltGuru Signals is not liable for any loss or harm arising from how you use
+          or ignore anything we publish—on this site, in Telegram, or elsewhere. By using our materials, you agree you
+          do so at your own risk.
+        </p>
+        <p>
+          Nothing we share is personalized financial or investment advice. Our trade ideas and calls are commentary and
+          education: we document how we approach the market and share that process for learning. We will never ask to
+          manage your funds, hold custody of your assets, or trade on your behalf.
+        </p>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p>&copy; AltGuru Trading. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

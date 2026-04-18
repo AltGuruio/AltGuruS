@@ -1,0 +1,626 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AltGuru Signals | Crypto Trading Signals</title>
+  <meta name="description" content="Transparent crypto trading signals with clear risk management, public logs, and a disciplined, trader-first process." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="nav-brand">
+        <a class="logo" href="index.html">
+          <img src="AltGuru_PP.png" alt="AltGuru Signals" class="logo-image" />
+        </a>
+        <div class="nav-search-pill" role="search">
+          <svg class="nav-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" />
+            <path d="M20 20l-4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <input type="search" class="nav-search-input" placeholder="Search…" aria-label="Search" autocomplete="off" />
+        </div>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="nav" id="navMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="results.html">Results</a>
+        <a href="signals.html">Signals</a>
+        <a href="bots.html">Bots</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="news.html">News</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="lang-pill" aria-label="Language">EN</button>
+        <a href="join.html" class="login-pill">Log in</a>
+        <a href="pricing.html" class="join-pill">Join</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class = "hero-copy-inner"><p class="tag">clarity beats guesswork</p>
+            <h1>Trade With a Plan, Not Hype.</h1>
+            <p class="sub">
+              Get structured signals, disciplined risk rules, and transparent reporting across Forex, Futures, and Spot
+              — plus our trading bot for automated execution. Backed by a 24-hour money-back guarantee.
+            </p>
+            <div class="hero-actions">
+              <a href="pricing.html" class="btn btn-cta">Join AltGuru</a>
+              <a href="results.html" class="btn btn-soft">See Our Results</a>
+            </div>
+            <div class="hero-partners">
+              <div class="hero-partners-row">
+                <span class="partner-item partner-tradingview">
+                  <img
+                    src="assets/TV-full-logo-white.svg"
+                    alt="TradingView"
+                    class="partner-logo partner-logo-tradingview"
+                    width="755"
+                    height="129"
+                    decoding="async"
+                  />
+                </span>
+                <span class="partner-item partner-binance">
+                  <img
+                    src="assets/Binance_logo.svg"
+                    alt="Binance"
+                    class="partner-logo partner-logo-binance"
+                    width="632"
+                    height="127"
+                    decoding="async"
+                  />
+                </span>
+                <span class="partner-item partner-bybit">
+                  <img
+                    src="assets/Bybit_Logo.svg"
+                    alt="Bybit"
+                    class="partner-logo partner-logo-bybit"
+                    width="384"
+                    height="128"
+                    decoding="async"
+                  />
+                </span>
+              </div>
+              <div class="hero-partners-row hero-partners-row-secondary">
+                <span class="partner-item partner-metatrader5">
+                  <img
+                    src="assets/metatrader5.svg"
+                    alt="MetaTrader 5"
+                    class="partner-logo partner-logo-metatrader5"
+                    width="186"
+                    height="32"
+                    decoding="async"
+                  />
+                </span>
+                <span class="partner-item partner-equiti">
+                  <img
+                    src="assets/equiti-company-logo.svg"
+                    alt="Equiti"
+                    class="partner-logo partner-logo-equiti"
+                    width="141"
+                    height="41"
+                    decoding="async"
+                  />
+                </span>
+              </div>
+            </div></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-phone-wrap">
+            <img
+              src="assets/Hero-Iphonee.png"
+              alt="AltGuru Signals app preview"
+              class="hero-iphone-img"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker-strip" aria-label="Cryptocurrency prices (24h change)">
+      <div class="ticker-track">
+        <div class="ticker-segment">
+          <span class="ticker-item" data-ticker="btc">BTC/USD <strong class="ticker-price">—</strong> <em class="ticker-pct flat">—</em></span>
+          <span class="ticker-item" data-ticker="eth">ETH/USD <strong class="ticker-price">—</strong> <em class="ticker-pct flat">—</em></span>
+          <span class="ticker-item" data-ticker="sol">SOL/USD <strong class="ticker-price">—</strong> <em class="ticker-pct flat">—</em></span>
+          <span class="ticker-item" data-ticker="xrp">XRP/USD <strong class="ticker-price">—</strong> <em class="ticker-pct flat">—</em></span>
+          <span class="ticker-item" data-ticker="doge">DOGE/USD <strong class="ticker-price">—</strong> <em class="ticker-pct flat">—</em></span>
+        </div>
+        <div class="ticker-segment" aria-hidden="true">
+          <span class="ticker-item" data-ticker="btc">BTC/USD <strong class="ticker-price">—</strong> <em class="ticker-pct flat">—</em></span>
+          <span class="ticker-item" data-ticker="eth">ETH/USD <strong class="ticker-price">—</strong> <em class="ticker-pct flat">—</em></span>
+          <span class="ticker-item" data-ticker="sol">SOL/USD <strong class="ticker-price">—</strong> <em class="ticker-pct flat">—</em></span>
+          <span class="ticker-item" data-ticker="xrp">XRP/USD <strong class="ticker-price">—</strong> <em class="ticker-pct flat">—</em></span>
+          <span class="ticker-item" data-ticker="doge">DOGE/USD <strong class="ticker-price">—</strong> <em class="ticker-pct flat">—</em></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service-section">
+      <div class="container">
+        <h2 class="service-heading">What You Get With AltGuru</h2>
+        <div class="service-card">
+          <div class="service-copy">
+            <h3>Trading Signals</h3>
+            <p>
+              Human-powered crypto and forex signals delivered in real time. Each signal shows clear entries,
+              stop-loss levels, and realistic targets so you can execute with confidence and proper risk control.
+            </p>
+            <a href="signals.html" class="btn btn-soft service-btn">Learn More</a>
+          </div>
+          <div class="service-visual">
+            <img
+              src="assets/HomeTradingSignals.png"
+              alt="Trading signals dashboard preview"
+              class="service-visual-img"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+
+        <div class="service-card service-card-bot">
+          <div class="service-bot-visual">
+            <img
+              src="assets/HomeTradingBots.png"
+              alt="AltGuru trading bots"
+              class="service-bot-img"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="service-copy service-copy-bot">
+            <h3>AltGuru Bots</h3>
+            <p>
+              Browse exclusive trading bots and fully customizable automation tools built for speed. More coming soon.
+            </p>
+            <a href="bots.html" class="btn btn-soft service-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how-section">
+      <div class="container">
+        <h2 class="how-title">How It Works</h2>
+        <div class="how-steps">
+          <article class="how-step">
+            <div class="step-icon-box">
+              <img
+                src="assets/icons/user-plus.svg"
+                alt=""
+                class="step-icon-img"
+                width="42"
+                height="42"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </div>
+            <p class="step-label">STEP 1</p>
+            <h3>Join Community</h3>
+            <p>
+              Join
+              <a href="https://t.me/altguruio" target="_blank" rel="noopener noreferrer">AltGuruio</a>
+              channel and instantly connect with a global network of traders.
+            </p>
+          </article>
+
+          <article class="how-step">
+            <div class="step-icon-box">
+              <svg class="step-icon-connect" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7.8 13.6a3.5 3.5 0 0 1 0-5l3-3a3.5 3.5 0 1 1 5 5l-.8.8-1.4-1.4.8-.8a1.5 1.5 0 0 0-2.1-2.1l-3 3a1.5 1.5 0 1 0 2.1 2.1l.8-.8 1.4 1.4-.8.8a3.5 3.5 0 0 1-5 0zm8.4-3.2a3.5 3.5 0 0 1 0 5l-3 3a3.5 3.5 0 0 1-5-5l.8-.8 1.4 1.4-.8.8a1.5 1.5 0 0 0 2.1 2.1l3-3a1.5 1.5 0 1 0-2.1-2.1l-.8.8-1.4-1.4.8-.8a3.5 3.5 0 0 1 5 0z"/>
+              </svg>
+            </div>
+            <p class="step-label">STEP 2</p>
+            <h3>Connect</h3>
+            <p>Get real-time market alerts, daily analyses, and actionable insights directly on your device.</p>
+          </article>
+
+          <article class="how-step">
+            <div class="step-icon-box">
+              <img
+                src="assets/icons/arrow-up.svg"
+                alt=""
+                class="step-icon-img"
+                width="42"
+                height="42"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </div>
+            <p class="step-label">STEP 3</p>
+            <h3>Trade Confidently</h3>
+            <p>Use the signals and analysis to support your trading decisions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section earnings-section">
+      <div class="container">
+        <h2 class="earnings-title">Our Member&apos;s Earnings</h2>
+        <p class="earnings-sub">
+          See our latest trade analysis shared live with members. We keep everything transparent so you know exactly what to expect.
+        </p>
+        <div class="earnings-cta-wrap">
+          <a href="pricing.html" class="btn analysis-cta">Get Started</a>
+        </div>
+
+        <div class="analysis-grid">
+          <article class="analysis-card analysis-card--soon" aria-label="Forex performance — coming soon">
+            <div class="analysis-card-head">
+              <small>MARCH 2026</small>
+              <h3 class="analysis-title-forex">Forex</h3>
+            </div>
+            <ul class="analysis-stats">
+              <li><span>Signals</span><strong>12</strong></li>
+              <li><span>Wins</span><strong>8</strong></li>
+              <li><span>Losses</span><strong>4</strong></li>
+              <li><span>ROI</span><strong>+640 PIPS</strong></li>
+            </ul>
+            <span class="analysis-btn analysis-btn-forex analysis-btn-soon" aria-disabled="true">View Report</span>
+            <div class="analysis-card-soon-overlay analysis-card-soon-overlay--forex" aria-hidden="true">
+              <div class="analysis-card-soon-overlay-inner">
+                <span class="analysis-card-soon-market">Forex</span>
+                <span class="analysis-card-soon-pill">Coming soon</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="analysis-card">
+            <div class="analysis-card-head">
+              <small>MARCH 2026</small>
+              <h3 class="analysis-title-futures">Futures</h3>
+            </div>
+            <ul class="analysis-stats">
+              <li><span>Signals</span><strong>99</strong></li>
+              <li><span>Wins</span><strong>67</strong></li>
+              <li><span>Losses</span><strong>32</strong></li>
+              <li><span>ROI</span><strong>+452%</strong></li>
+              <li><span>Win Rate</span><strong>67.7%</strong></li>
+            </ul>
+            <a href="results.html" class="analysis-btn analysis-btn-futures">View Report</a>
+          </article>
+
+          <article class="analysis-card analysis-card--soon" aria-label="Spot performance — coming soon">
+            <div class="analysis-card-head">
+              <small>MARCH 2026</small>
+              <h3 class="analysis-title-spot">Spot</h3>
+            </div>
+            <ul class="analysis-stats">
+              <li><span>Signals</span><strong>15</strong></li>
+              <li><span>Wins</span><strong>10</strong></li>
+              <li><span>Losses</span><strong>5</strong></li>
+              <li><span>ROI</span><strong>+12%</strong></li>
+            </ul>
+            <span class="analysis-btn analysis-btn-spot analysis-btn-soon" aria-disabled="true">View Report</span>
+            <div class="analysis-card-soon-overlay analysis-card-soon-overlay--spot" aria-hidden="true">
+              <div class="analysis-card-soon-overlay-inner">
+                <span class="analysis-card-soon-market">Spot</span>
+                <span class="analysis-card-soon-pill">Coming soon</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-bg">
+      <div class="container">
+        <div class="cta-panel">
+          <h2>Built for Disciplined Traders.</h2>
+          <ul class="cta-points">
+            <li>Structured trade plans with clear entry, stop-loss, and target zones</li>
+            <li>Transparent monthly reports across Forex, Futures, and Spot</li>
+            <li>Risk-first execution focused on consistency, not hype</li>
+          </ul>
+          <div class="hero-actions">
+            <a href="results.html" class="btn">View Reports</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section free-try-section">
+      <div class="container">
+        <h2 class="free-try-title">Not Sure Yet? Try Us for <span>FREE!</span></h2>
+        <div class="free-try-grid">
+          <article class="free-try-card">
+            <span class="free-try-icon" aria-hidden="true">
+              <img src="assets/icons/telegram-Icon.svg" alt="" class="free-try-icon-img" width="34" height="34" decoding="async" />
+            </span>
+            <h3>FREE access</h3>
+            <p>Join our free Telegram channel and start receiving live market updates right away.</p>
+          </article>
+          <article class="free-try-card">
+            <span class="free-try-icon" aria-hidden="true">
+              <img src="assets/icons/chart-Icon.svg" alt="" class="free-try-icon-img" width="34" height="34" decoding="async" />
+            </span>
+            <h3>Get a taste</h3>
+            <p>Preview our signal style, risk structure, and execution approach before spending anything.</p>
+          </article>
+          <article class="free-try-card">
+            <span class="free-try-icon" aria-hidden="true">
+              <img src="assets/icons/file-icon.svg" alt="" class="free-try-icon-img" width="34" height="34" decoding="async" />
+            </span>
+            <h3>See real results</h3>
+            <p>Watch transparent reports and decide if AltGuru is the right fit for your trading goals.</p>
+          </article>
+        </div>
+        <div class="free-try-tg-wrap">
+          <a href="https://t.me/altguruio" class="btn analysis-cta" target="_blank" rel="noopener noreferrer">Join Free Telegram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <article class="faq-item">
+            <button type="button" class="faq-trigger" id="faq-trigger-1" aria-expanded="false" aria-controls="faq-panel-1">
+              <span class="faq-number">01</span>
+              <span class="faq-question">What is Trade Calls/Signals?</span>
+              <span class="faq-arrow" aria-hidden="true"><svg class="faq-arrow-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <div class="faq-panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">
+                  Trade calls are published setups: direction, entry zone, stop-loss, and take-profit levels you can mirror on
+                  your own exchange. “Signals” is how we deliver those calls—mainly in our VIP Telegram—so you get timely
+                  updates when plans change.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" class="faq-trigger" id="faq-trigger-2" aria-expanded="false" aria-controls="faq-panel-2">
+              <span class="faq-number">02</span>
+              <span class="faq-question">What trading platforms/exchanges are supported for trade calls?</span>
+              <span class="faq-arrow" aria-hidden="true"><svg class="faq-arrow-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <div class="faq-panel" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">
+                  Calls are written for liquid crypto futures venues. Most members use major exchanges such as Binance,
+                  ByBit, KuCoin, OKX, or Bitget—use whichever you are verified on, as long as the same contract/symbol is
+                  available there.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" class="faq-trigger" id="faq-trigger-3" aria-expanded="false" aria-controls="faq-panel-3">
+              <span class="faq-number">03</span>
+              <span class="faq-question">What is leverage trading?</span>
+              <span class="faq-arrow" aria-hidden="true"><svg class="faq-arrow-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <div class="faq-panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">
+                  Leverage lets you control a larger position than your margin deposit. It can amplify gains and losses; many
+                  of our setups reference moderate leverage (often in the 3x–8x range). Use only what you understand and can
+                  afford to lose—this is not personalised advice.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" class="faq-trigger" id="faq-trigger-4" aria-expanded="false" aria-controls="faq-panel-4">
+              <span class="faq-number">04</span>
+              <span class="faq-question">How can I join the VIP group?</span>
+              <span class="faq-arrow" aria-hidden="true"><svg class="faq-arrow-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <div class="faq-panel" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">
+                  Pick a plan on the <a href="pricing.html">Pricing</a> page, complete checkout, then follow the onboarding
+                  steps we send (usually via Telegram). If anything is unclear, message
+                  <a href="https://t.me/AltGuruSupport" target="_blank" rel="noopener noreferrer">@AltGuruSupport</a>.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" class="faq-trigger" id="faq-trigger-5" aria-expanded="false" aria-controls="faq-panel-5">
+              <span class="faq-number">05</span>
+              <span class="faq-question">What payment methods can I use?</span>
+              <span class="faq-arrow" aria-hidden="true"><svg class="faq-arrow-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <div class="faq-panel" id="faq-panel-5" role="region" aria-labelledby="faq-trigger-5">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">
+                  Plans are activated after crypto payment and a quick confirmation with support. See
+                  <a href="pay.html">Pay with crypto</a> for the flow and what to include when you message
+                  <a href="https://t.me/AltGuruSupport" target="_blank" rel="noopener noreferrer">@AltGuruSupport</a>.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" class="faq-trigger" id="faq-trigger-6" aria-expanded="false" aria-controls="faq-panel-6">
+              <span class="faq-number">06</span>
+              <span class="faq-question">Where can I see all the RESULTS?</span>
+              <span class="faq-arrow" aria-hidden="true"><svg class="faq-arrow-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <div class="faq-panel" id="faq-panel-6" role="region" aria-labelledby="faq-trigger-6">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">
+                  Head to the <a href="results.html">Results</a> page for logs and performance reporting we publish on the site.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" class="faq-trigger" id="faq-trigger-7" aria-expanded="false" aria-controls="faq-panel-7">
+              <span class="faq-number">07</span>
+              <span class="faq-question">I am NEW and I want to learn from zero</span>
+              <span class="faq-arrow" aria-hidden="true"><svg class="faq-arrow-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <div class="faq-panel" id="faq-panel-7" role="region" aria-labelledby="faq-trigger-7">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">
+                  Start with small size (or demo), read how we format calls on <a href="signals.html">Signals</a>, and join the
+                  free Telegram to watch how updates flow. The <a href="about.html">About</a> page explains our process in
+                  plain language—still, only trade with money you can lose.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" class="faq-trigger" id="faq-trigger-8" aria-expanded="false" aria-controls="faq-panel-8">
+              <span class="faq-number">08</span>
+              <span class="faq-question">Is there a Free trial period?</span>
+              <span class="faq-arrow" aria-hidden="true"><svg class="faq-arrow-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <div class="faq-panel" id="faq-panel-8" role="region" aria-labelledby="faq-trigger-8">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">
+                  Paid trial windows (if any) are always shown on <a href="pricing.html">Pricing</a> at checkout. Everyone
+                  can follow the free public Telegram first to see our style before upgrading.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" class="faq-trigger" id="faq-trigger-9" aria-expanded="false" aria-controls="faq-panel-9">
+              <span class="faq-number">09</span>
+              <span class="faq-question">How can I change my subscription?</span>
+              <span class="faq-arrow" aria-hidden="true"><svg class="faq-arrow-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <div class="faq-panel" id="faq-panel-9" role="region" aria-labelledby="faq-trigger-9">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">
+                  Message <a href="https://t.me/AltGuruSupport" target="_blank" rel="noopener noreferrer">@AltGuruSupport</a>
+                  with your current plan and what you want to switch to. We will confirm eligibility, any price difference,
+                  and timing so access stays uninterrupted where possible.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" class="faq-trigger" id="faq-trigger-10" aria-expanded="false" aria-controls="faq-panel-10">
+              <span class="faq-number">10</span>
+              <span class="faq-question">How can I cancel my subscription?</span>
+              <span class="faq-arrow" aria-hidden="true"><svg class="faq-arrow-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <div class="faq-panel" id="faq-panel-10" role="region" aria-labelledby="faq-trigger-10">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">
+                  Contact <a href="https://t.me/AltGuruSupport" target="_blank" rel="noopener noreferrer">@AltGuruSupport</a>
+                  before your renewal date with the email or Telegram handle you used to subscribe. We will confirm when VIP
+                  access ends and remove you from billing where applicable—see <a href="terms.html">Terms</a> for refund
+                  windows that may apply.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer site-footer-home">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-brand">
+            <img src="AltGuru_PP.png" alt="" class="footer-brand-logo" />
+            <span class="footer-brand-wordmark">ALTGURU</span>
+          </a>
+          <div class="footer-socials" aria-label="Social links">
+            <a
+              class="footer-social-link"
+              href="https://t.me/altguruio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Telegram"
+            >
+              <img class="footer-social-icon" src="assets/icons/telegram-Icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://x.com/AltGuruio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+            >
+              <img class="footer-social-icon" src="assets/icons/x-icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://www.instagram.com/altguru.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img class="footer-social-icon" src="assets/icons/instagram-icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://www.youtube.com/@AltGuruio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube @AltGuruio"
+              title="YouTube @AltGuruio"
+            >
+              <img class="footer-social-icon" src="assets/icons/youtube-icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <a href="results.html">Results</a>
+          <a href="news.html">News</a>
+          <a href="./faqs.html">FAQs</a>
+          <a href="signals.html">Signals</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p class="footer-muted">Telegram Channel</p>
+          <p>@AltGuruio</p>
+          <p class="footer-muted">Telegram support</p>
+          <p>@AltGuruSupport</p>
+        </div>
+      </div>
+
+      <div class="footer-disclosure">
+        <h3>Disclaimer</h3>
+        <p>
+          Trading decisions are yours alone. AltGuru Signals is not liable for any loss or harm arising from how you use
+          or ignore anything we publish—on this site, in Telegram, or elsewhere. By using our materials, you agree you
+          do so at your own risk.
+        </p>
+        <p>
+          Nothing we share is personalized financial or investment advice. Our trade ideas and calls are commentary and
+          education: we document how we approach the market and share that process for learning. We will never ask to
+          manage your funds, hold custody of your assets, or trade on your behalf.
+        </p>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p>&copy; AltGuru Trading. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="ticker.js"></script>
+</body>
+</html>

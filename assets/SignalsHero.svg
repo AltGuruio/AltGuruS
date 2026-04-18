@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" width="720" height="480" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+  <defs>
+    <!-- Brand-aligned: --bg #0b1020, --card #111b36, --primary #39d353, --primary-2 #95f4a4, --border #24345f -->
+    <linearGradient id="h-ambient-a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#39d353" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#39d353" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="h-glow-main" cx="300" cy="210" r="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#39d353" stop-opacity="0.28"/>
+      <stop offset="42%" stop-color="#39d353" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="h-glow-cool" cx="560" cy="120" r="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5eb8ff" stop-opacity="0.12"/>
+      <stop offset="70%" stop-color="#5eb8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="h-chart-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#39d353" stop-opacity="0.35"/>
+      <stop offset="55%" stop-color="#39d353" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="h-glass-screen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141f3d"/>
+      <stop offset="35%" stop-color="#0d1528"/>
+      <stop offset="100%" stop-color="#070c18"/>
+    </linearGradient>
+    <linearGradient id="h-glass-shine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="h-bezel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2748"/>
+      <stop offset="100%" stop-color="#0a0f1c"/>
+    </linearGradient>
+    <linearGradient id="h-plate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#162447"/>
+      <stop offset="50%" stop-color="#0f1830"/>
+      <stop offset="100%" stop-color="#0a1020"/>
+    </linearGradient>
+    <linearGradient id="h-bar-a" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#95f4a4"/>
+      <stop offset="100%" stop-color="#39d353"/>
+    </linearGradient>
+    <clipPath id="h-chart-clip">
+      <rect x="52" y="168" width="248" height="132" rx="14"/>
+    </clipPath>
+    <clipPath id="h-phone-screen">
+      <rect x="418" y="78" width="168" height="268" rx="22"/>
+    </clipPath>
+  </defs>
+
+  <!-- Atmosphere -->
+  <rect width="720" height="480" fill="transparent"/>
+  <ellipse cx="300" cy="210" rx="340" ry="200" fill="url(#h-glow-main)"/>
+  <ellipse cx="560" cy="120" rx="220" ry="140" fill="url(#h-glow-cool)"/>
+  <rect x="0" y="0" width="720" height="480" fill="url(#h-ambient-a)" opacity="0.5"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.22" stroke="#24345f" stroke-width="0.5">
+    <path d="M40 120 H680 M40 160 H680 M40 200 H680 M40 240 H680 M40 280 H680 M40 320 H680 M40 360 H680 M40 400 H680"/>
+    <path d="M80 60 V420 M120 60 V420 M160 60 V420 M200 60 V420 M240 60 V420 M280 60 V420 M320 60 V420 M360 60 V420 M400 60 V420 M440 60 V420 M480 60 V420 M520 60 V420 M560 60 V420 M600 60 V420 M640 60 V420"/>
+  </g>
+
+  <!-- Chart card (flat shadows  SVG filters break many browsers when used as <img>) -->
+  <g>
+    <rect x="46" y="164" width="272" height="156" rx="16" fill="#000510" fill-opacity="0.42"/>
+    <rect x="40" y="156" width="272" height="156" rx="16" fill="#0b1020" stroke="#24345f" stroke-width="1"/>
+    <rect x="41" y="157" width="270" height="154" rx="15" fill="none" stroke="rgba(149,244,164,0.38)" stroke-width="1"/>
+  </g>
+  <rect x="52" y="168" width="248" height="132" rx="14" fill="#070b14" opacity="0.6"/>
+  <!-- Grid inside chart -->
+  <g clip-path="url(#h-chart-clip)" opacity="0.35">
+    <path stroke="#24345f" stroke-width="0.75" d="M52 196 H300 M52 220 H300 M52 244 H300 M52 268 H300 M52 292 H300"/>
+  </g>
+  <!-- Area + line -->
+  <g clip-path="url(#h-chart-clip)">
+    <path
+      d="M52 278 C 78 262, 92 268, 108 248 C 128 222, 142 238, 162 218 C 182 198, 198 208, 218 182 C 238 156, 252 172, 272 152 C 288 136, 300 148, 300 148 L 300 300 L 52 300 Z"
+      fill="url(#h-chart-fill)"/>
+    <path
+      d="M52 278 C 78 262, 92 268, 108 248 C 128 222, 142 238, 162 218 C 182 198, 198 208, 218 182 C 238 156, 252 172, 272 152 C 288 136, 300 148, 300 148"
+      stroke="#39d353"
+      stroke-width="2.75"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      fill="none"/>
+    <!-- Data nodes -->
+    <circle cx="108" cy="248" r="3.5" fill="#0b1020" stroke="#95f4a4" stroke-width="1.5"/>
+    <circle cx="162" cy="218" r="3.5" fill="#0b1020" stroke="#39d353" stroke-width="1.5"/>
+    <circle cx="218" cy="182" r="4" fill="#0b1020" stroke="#39d353" stroke-width="2"/>
+    <circle cx="272" cy="152" r="4.5" fill="#39d353" fill-opacity="0.25" stroke="#95f4a4" stroke-width="1.5"/>
+  </g>
+  <!-- Card chrome -->
+  <g opacity="0.9">
+    <rect x="52" y="172" width="36" height="5" rx="2.5" fill="#39d353" fill-opacity="0.35"/>
+    <circle cx="64" cy="174.5" r="2" fill="#39d353"/>
+  </g>
+  <!-- Volume bars under chart -->
+  <g opacity="0.45">
+    <rect x="58" y="288" width="8" height="8" rx="1" fill="#24345f"/>
+    <rect x="72" y="284" width="8" height="12" rx="1" fill="#39d353" fill-opacity="0.4"/>
+    <rect x="86" y="286" width="8" height="10" rx="1" fill="#24345f"/>
+    <rect x="100" y="280" width="8" height="16" rx="1" fill="#39d353" fill-opacity="0.55"/>
+    <rect x="114" y="282" width="8" height="14" rx="1" fill="#24345f"/>
+    <rect x="128" y="276" width="8" height="20" rx="1" fill="#39d353" fill-opacity="0.45"/>
+    <rect x="142" y="288" width="8" height="8" rx="1" fill="#24345f"/>
+  </g>
+
+  <!-- Stat pill -->
+  <g>
+    <rect x="272" y="132" width="88" height="32" rx="16" fill="#000510" fill-opacity="0.38"/>
+    <rect x="268" y="128" width="88" height="32" rx="16" fill="#111b36" stroke="#24345f" stroke-width="1"/>
+    <circle cx="284" cy="144" r="4" fill="#39d353"/>
+    <text x="296" y="148" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#9ba8d2" letter-spacing="0.06em">LIVE</text>
+  </g>
+
+  <!-- Phone body -->
+  <g>
+    <rect x="406" y="68" width="204" height="318" rx="36" fill="#000510" fill-opacity="0.4"/>
+    <rect x="400" y="58" width="204" height="318" rx="36" fill="url(#h-bezel)" stroke="#24345f" stroke-width="1.25"/>
+    <!-- Side highlight -->
+    <path d="M404 100 Q402 240 404 340" stroke="#ffffff" stroke-opacity="0.06" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+  <rect x="412" y="70" width="180" height="294" rx="28" fill="#050810" stroke="#1a2748" stroke-width="1"/>
+  <!-- Screen -->
+  <g clip-path="url(#h-phone-screen)">
+    <rect x="418" y="78" width="168" height="268" fill="url(#h-glass-screen)"/>
+    <!-- Shine -->
+    <rect x="418" y="78" width="168" height="120" fill="url(#h-glass-shine)" opacity="0.9"/>
+    <!-- Top status -->
+    <text x="430" y="98" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#9ba8d2" opacity="0.7">Signals</text>
+    <rect x="528" y="88" width="48" height="14" rx="7" fill="#070c18" stroke="#24345f" stroke-width="0.75"/>
+    <!-- Radar / composite gauge -->
+    <circle cx="502" cy="168" r="52" fill="none" stroke="#24345f" stroke-width="1"/>
+    <circle cx="502" cy="168" r="40" fill="none" stroke="#24345f" stroke-width="0.75" stroke-dasharray="3 5" opacity="0.7"/>
+    <path d="M502 168 L502 124 A44 44 0 0 1 538 188 Z" fill="#39d353" fill-opacity="0.12" stroke="none"/>
+    <path d="M502 168 L538 188" stroke="#39d353" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+    <path d="M502 168 L472 198" stroke="#95f4a4" stroke-width="1.5" stroke-linecap="round" opacity="0.75"/>
+    <circle cx="502" cy="168" r="6" fill="#0b1020" stroke="#39d353" stroke-width="2"/>
+    <!-- Arc accent -->
+    <path d="M458 168 A44 44 0 0 1 502 124" stroke="#95f4a4" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.85"/>
+    <!-- Bars -->
+    <g transform="translate(438 228)">
+      <rect x="0" y="28" width="14" height="34" rx="4" fill="url(#h-bar-a)" fill-opacity="0.35"/>
+      <rect x="22" y="12" width="14" height="50" rx="4" fill="url(#h-bar-a)" fill-opacity="0.85"/>
+      <rect x="44" y="22" width="14" height="40" rx="4" fill="url(#h-bar-a)" fill-opacity="0.55"/>
+      <rect x="66" y="6" width="14" height="56" rx="4" fill="url(#h-bar-a)" fill-opacity="0.95"/>
+      <rect x="88" y="18" width="14" height="44" rx="4" fill="url(#h-bar-a)" fill-opacity="0.65"/>
+      <rect x="110" y="24" width="14" height="38" rx="4" fill="url(#h-bar-a)" fill-opacity="0.45"/>
+    </g>
+    <!-- Mini spark -->
+    <path d="M438 312 L452 298 L468 306 L486 288 L502 296 L520 276 L538 284 L556 268" stroke="#39d353" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.65"/>
+    <path d="M438 312 L452 298 L468 306 L486 288 L502 296 L520 276 L538 284 L556 268 L556 318 L438 318 Z" fill="url(#h-chart-fill)" opacity="0.2"/>
+    <!-- Bottom home indicator -->
+    <rect x="484" y="328" width="36" height="4" rx="2" fill="#ffffff" fill-opacity="0.12"/>
+  </g>
+  <!-- Glass edge -->
+  <rect x="418" y="78" width="168" height="268" rx="22" fill="none" stroke="#95f4a4" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- BTC platform -->
+  <g transform="translate(228 312)">
+    <ellipse cx="132" cy="88" rx="140" ry="28" fill="#000510" fill-opacity="0.38"/>
+    <rect x="4" y="6" width="264" height="88" rx="20" fill="#000510" fill-opacity="0.4"/>
+    <rect x="0" y="0" width="264" height="88" rx="20" fill="url(#h-plate)" stroke="#24345f" stroke-width="1"/>
+    <rect x="1" y="1" width="262" height="86" rx="19" fill="none" stroke="rgba(149,244,164,0.38)" stroke-width="1"/>
+    <rect x="12" y="10" width="240" height="3" rx="1.5" fill="url(#h-glass-shine)" opacity="0.35"/>
+    <text x="132" y="58" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="800" fill="#ffffff" fill-opacity="0.04">&#x20BF;</text>
+    <text x="132" y="56" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="38" font-weight="800" fill="#f0f4ff">&#x20BF;</text>
+  </g>
+
+  <!-- Refined traces -->
+  <g stroke-linecap="round" fill="none" opacity="0.85">
+    <path d="M360 360 C 340 340, 320 320, 300 300" stroke="#39d353" stroke-opacity="0.35" stroke-width="1.25"/>
+    <path d="M360 360 C 380 350, 400 330, 418 310" stroke="#39d353" stroke-opacity="0.3" stroke-width="1.25"/>
+    <circle cx="300" cy="300" r="3" fill="#39d353" fill-opacity="0.5" stroke="none"/>
+    <circle cx="418" cy="310" r="3" fill="#95f4a4" fill-opacity="0.45" stroke="none"/>
+  </g>
+</svg>

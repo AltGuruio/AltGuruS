@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pay with crypto | AltGuru Signals</title>
+  <meta name="description" content="Pay with crypto and message @AltGuruSupport for activation." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="pay-page">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="nav-brand">
+        <a class="logo" href="index.html">
+          <img src="AltGuru_PP.png" alt="AltGuru Signals" class="logo-image" />
+        </a>
+        <div class="nav-search-pill" role="search">
+          <svg class="nav-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" />
+            <path d="M20 20l-4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <input type="search" class="nav-search-input" placeholder="Search…" aria-label="Search" autocomplete="off" />
+        </div>
+      </div>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="results.html">Results</a>
+        <a href="signals.html">Signals</a>
+        <a href="bots.html">Bots</a>
+        <a href="pricing.html" class="active">Pricing</a>
+        <a href="news.html">News</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
+      <div class="nav-actions">
+        <button class="lang-pill" aria-label="Language">EN</button>
+        <a href="join.html" class="login-pill">Log in</a>
+        <a href="pricing.html" class="join-pill">Join</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section pricing-page">
+    <div class="container">
+      <div class="pricing-hero">
+        <p class="pricing-kicker">Payment</p>
+        <h1 class="pricing-title">Pay with crypto</h1>
+        <p class="sub pricing-sub">
+          Selected: <strong id="selectedPlan">—</strong>. After sending payment, message
+          <a class="tg-inline" href="https://t.me/AltGuruSupport" target="_blank" rel="noreferrer">@AltGuruSupport</a> on Telegram
+          with the details below.
+        </p>
+      </div>
+
+      <section class="pay-panel" aria-label="Pay with crypto">
+        <div class="pay-head">
+          <div>
+            <h2 class="pay-title">Payment details</h2>
+            <p class="pay-sub">
+              Select a network to reveal the wallet address.
+            </p>
+          </div>
+        </div>
+
+        <div class="network-tabs" role="tablist" aria-label="USDT or SOL" data-active="trc20">
+          <span class="network-tabs-slider" aria-hidden="true"></span>
+          <button class="network-tab active" type="button" data-network="trc20">USDT</button>
+          <button class="network-tab" type="button" data-network="sol">SOL</button>
+        </div>
+
+        <div class="network-panel" data-network-panel="trc20">
+          <div class="addr-row">
+            <div class="addr-meta">
+              <p class="addr-label">TRC20 Address (USDT)</p>
+              <p class="addr-value" data-address="trc20">—</p>
+            </div>
+            <button class="copy-btn" type="button" data-copy-address="trc20" disabled>Copy</button>
+          </div>
+          <p class="addr-warning">Send <strong>USDT only</strong> via <strong>TRC20</strong> to this address. Wrong network may result in lost funds.</p>
+        </div>
+
+        <div class="network-panel hidden" data-network-panel="sol">
+          <div class="addr-row">
+            <div class="addr-meta">
+              <p class="addr-label">Solana address (SOL)</p>
+              <p class="addr-value" data-address="sol">—</p>
+            </div>
+            <button class="copy-btn" type="button" data-copy-address="sol" disabled>Copy</button>
+          </div>
+          <p class="addr-warning">Send <strong>native SOL only</strong> to this address. Do not send USDT or other tokens. Wrong asset or network may result in lost funds.</p>
+        </div>
+
+        <div class="msg-box" aria-label="Telegram message template">
+          <div class="msg-head">
+            <h3 class="msg-title">Message template</h3>
+            <div class="msg-actions">
+              <button class="copy-btn" type="button" data-copy-template>Copy message</button>
+              <a class="copy-btn msg-open" href="#" data-open-telegram>Open Telegram</a>
+            </div>
+          </div>
+
+          <pre class="msg-template" id="tgTemplate">Market: —
+Billing: —
+Username: @___
+Transaction ID: ___</pre>
+
+          <p class="note">
+            Paste this message to
+            <a class="tg-inline" href="https://t.me/AltGuruSupport" target="_blank" rel="noreferrer">@AltGuruSupport</a>
+            with your username and transaction ID <span id="payAccessTail">to get access to the VIP group.</span>
+          </p>
+        </div>
+
+        <div class="pay-panel-footer">
+          <a class="btn btn-soft pay-support" href="https://t.me/AltGuruSupport" target="_blank" rel="noreferrer">Message Support</a>
+          <a class="copy-btn" href="pricing.html">Back to pricing</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer site-footer-home">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-brand">
+            <img src="AltGuru_PP.png" alt="" class="footer-brand-logo" />
+            <span class="footer-brand-wordmark">ALTGURU</span>
+          </a>
+          <div class="footer-socials" aria-label="Social links">
+            <a
+              class="footer-social-link"
+              href="https://t.me/altguruio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Telegram"
+            >
+              <img class="footer-social-icon" src="assets/icons/telegram-Icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://x.com/AltGuruio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+            >
+              <img class="footer-social-icon" src="assets/icons/x-icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://www.instagram.com/altguru.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img class="footer-social-icon" src="assets/icons/instagram-icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://www.youtube.com/@AltGuruio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube @AltGuruio"
+              title="YouTube @AltGuruio"
+            >
+              <img class="footer-social-icon" src="assets/icons/youtube-icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <a href="results.html">Results</a>
+          <a href="news.html">News</a>
+          <a href="./faqs.html">FAQs</a>
+          <a href="signals.html">Signals</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p class="footer-muted">Telegram Channel</p>
+          <p>@AltGuruio</p>
+          <p class="footer-muted">Telegram support</p>
+          <p>@AltGuruSupport</p>
+        </div>
+      </div>
+
+      <div class="footer-disclosure">
+        <h3>Disclaimer</h3>
+        <p>
+          Trading decisions are yours alone. AltGuru Signals is not liable for any loss or harm arising from how you use
+          or ignore anything we publish—on this site, in Telegram, or elsewhere. By using our materials, you agree you
+          do so at your own risk.
+        </p>
+        <p>
+          Nothing we share is personalized financial or investment advice. Our trade ideas and calls are commentary and
+          education: we document how we approach the market and share that process for learning. We will never ask to
+          manage your funds, hold custody of your assets, or trade on your behalf.
+        </p>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p>&copy; AltGuru Trading. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

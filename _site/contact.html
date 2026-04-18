@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact us | AltGuru</title>
+  <meta
+    name="description"
+    content="Contact AltGuru — send your name, email, Telegram handle, and message. We reply on Telegram."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-contact">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="nav-brand">
+        <a class="logo" href="index.html">
+          <img src="AltGuru_PP.png" alt="AltGuru Signals" class="logo-image" />
+        </a>
+        <div class="nav-search-pill" role="search">
+          <svg class="nav-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" />
+            <path d="M20 20l-4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <input type="search" class="nav-search-input" placeholder="Search…" aria-label="Search" autocomplete="off" />
+        </div>
+      </div>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="results.html">Results</a>
+        <a href="signals.html">Signals</a>
+        <a href="bots.html">Bots</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="news.html">News</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
+      <div class="nav-actions">
+        <button class="lang-pill" aria-label="Language">EN</button>
+        <a href="join.html" class="login-pill">Log in</a>
+        <a href="pricing.html" class="join-pill">Join</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section page-contact-main">
+    <div class="container page-contact-inner">
+      <h1>Contact us</h1>
+      <p class="sub contact-lead">
+        Tell us what you need. Submitting opens Telegram with your details prefilled so you can send in one tap.
+      </p>
+
+      <div class="contact-form-card">
+        <form id="contactForm" class="contact-form" method="post" action="#">
+          <div class="contact-field">
+            <label for="contact-name">Name</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" required placeholder="Your name" />
+          </div>
+          <div class="contact-field">
+            <label for="contact-email">Email</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+          </div>
+          <div class="contact-field">
+            <label for="contact-telegram">Telegram</label>
+            <input
+              id="contact-telegram"
+              name="telegram"
+              type="text"
+              autocomplete="off"
+              required
+              placeholder="@YourUsername"
+            />
+          </div>
+          <div class="contact-field">
+            <label for="contact-message">Message</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              required
+              maxlength="3000"
+              placeholder="How can we help?"
+            ></textarea>
+          </div>
+          <div class="contact-actions">
+            <button type="submit" class="btn btn-cta">Send message</button>
+          </div>
+        </form>
+        <p class="contact-form-note">
+          Prefer to start manually?
+          <a href="https://t.me/AltGuruSupport" target="_blank" rel="noopener noreferrer">Message @AltGuruSupport</a>
+          on Telegram.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer site-footer-home">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-brand">
+            <img src="AltGuru_PP.png" alt="" class="footer-brand-logo" />
+            <span class="footer-brand-wordmark">ALTGURU</span>
+          </a>
+          <div class="footer-socials" aria-label="Social links">
+            <a
+              class="footer-social-link"
+              href="https://t.me/altguruio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Telegram"
+            >
+              <img class="footer-social-icon" src="assets/icons/telegram-Icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://x.com/AltGuruio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+            >
+              <img class="footer-social-icon" src="assets/icons/x-icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://www.instagram.com/altguru.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img class="footer-social-icon" src="assets/icons/instagram-icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://www.youtube.com/@AltGuruio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube @AltGuruio"
+              title="YouTube @AltGuruio"
+            >
+              <img class="footer-social-icon" src="assets/icons/youtube-icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <a href="results.html">Results</a>
+          <a href="news.html">News</a>
+          <a href="./faqs.html">FAQs</a>
+          <a href="signals.html">Signals</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p class="footer-muted">Telegram Channel</p>
+          <p>@AltGuruio</p>
+          <p class="footer-muted">Telegram support</p>
+          <p>@AltGuruSupport</p>
+        </div>
+      </div>
+
+      <div class="footer-disclosure">
+        <h3>Disclaimer</h3>
+        <p>
+          Trading decisions are yours alone. AltGuru Signals is not liable for any loss or harm arising from how you use
+          or ignore anything we publish—on this site, in Telegram, or elsewhere. By using our materials, you agree you
+          do so at your own risk.
+        </p>
+        <p>
+          Nothing we share is personalized financial or investment advice. Our trade ideas and calls are commentary and
+          education: we document how we approach the market and share that process for learning. We will never ask to
+          manage your funds, hold custody of your assets, or trade on your behalf.
+        </p>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p>&copy; AltGuru Trading. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      var form = document.getElementById("contactForm");
+      if (!form) return;
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var name = (document.getElementById("contact-name").value || "").trim();
+        var email = (document.getElementById("contact-email").value || "").trim();
+        var telegram = (document.getElementById("contact-telegram").value || "").trim();
+        var message = (document.getElementById("contact-message").value || "").trim();
+        var body =
+          "Name: " +
+          name +
+          "\nEmail: " +
+          email +
+          "\nTelegram: " +
+          telegram +
+          "\n\nMessage:\n" +
+          message;
+        var maxLen = 3200;
+        if (body.length > maxLen) {
+          body = body.slice(0, maxLen) + "\n…(truncated for link length)";
+        }
+        var url = "https://t.me/AltGuruSupport?text=" + encodeURIComponent(body);
+        var tg = window.open(url, "_blank", "noopener,noreferrer");
+        if (!tg) {
+          window.location.href = url;
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

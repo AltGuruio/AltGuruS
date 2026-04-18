@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing | AltGuru Signals</title>
+  <meta name="description" content="Simple pricing plans for crypto signals with manual USDT payments at launch." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="nav-brand">
+        <a class="logo" href="index.html">
+          <img src="AltGuru_PP.png" alt="AltGuru Signals" class="logo-image" />
+        </a>
+        <div class="nav-search-pill" role="search">
+          <svg class="nav-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" />
+            <path d="M20 20l-4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <input type="search" class="nav-search-input" placeholder="Search…" aria-label="Search" autocomplete="off" />
+        </div>
+      </div>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="results.html">Results</a>
+        <a href="signals.html">Signals</a>
+        <a href="bots.html">Bots</a>
+        <a href="pricing.html" class="active">Pricing</a>
+        <a href="news.html">News</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
+      <div class="nav-actions">
+        <button class="lang-pill" aria-label="Language">EN</button>
+        <a href="join.html" class="login-pill">Log in</a>
+        <a href="pricing.html" class="join-pill">Join</a>
+      </div>
+    </div>
+  </header>
+<main class="section pricing-page">
+    <div class="container">
+      <div class="pricing-hero">
+        <p class="pricing-kicker">Signals pricing</p>
+        <h1 class="pricing-title">Choose your plan</h1>
+        <p class="sub pricing-sub">Toggle billing, then choose a plan below.</p>
+
+        <div class="billing-toggle" role="tablist" aria-label="Billing period" data-active="monthly">
+          <span class="billing-toggle-slider" aria-hidden="true"></span>
+          <button class="billing-pill active" data-billing="monthly" type="button">Monthly</button>
+          <button class="billing-pill" data-billing="quarterly" type="button">Quarterly <span class="save-badge">Save</span></button>
+        </div>
+      </div>
+
+      <section class="pricing-grid" aria-label="Signals markets">
+        <article class="pricing-card pricing-card--soon" data-market="forex" aria-label="Forex signals — coming soon">
+          <div class="pricing-soon-inner">
+            <h3 class="pricing-soon-market">Forex</h3>
+            <span class="pricing-soon-pill">Coming soon</span>
+          </div>
+        </article>
+
+        <article class="pricing-card featured" data-market="futures">
+          <div class="corner-tag">Most Popular</div>
+          <header class="pricing-card-head">
+            <h3><span class="market-tag market-futures">Futures</span> Signals</h3>
+            <p class="tier-note">Structured setups for disciplined execution.</p>
+          </header>
+
+          <div class="price-row">
+            <span class="price" data-monthly="$29" data-quarterly="$69">$29</span>
+            <span class="per" data-monthly="/mo" data-quarterly="/3 mo">/mo</span>
+          </div>
+
+          <ul class="pricing-list">
+            <li>Exclusive access to our VIP signal group</li>
+            <li>Clear entries, stop-loss, and take-profit levels</li>
+            <li>3x-8x leverage trades</li>
+            <li>Tradable on major exchanges (Binance, ByBit, KuCoin, OKX, Bitget...)</li>
+          </ul>
+
+          <a class="btn btn-cta w-full pay-link" href="pay.html?market=futures">Subscribe</a>
+        </article>
+
+        <article class="pricing-card pricing-card--soon" data-market="spot" aria-label="Spot signals — coming soon">
+          <div class="pricing-soon-inner">
+            <h3 class="pricing-soon-market">Spot</h3>
+            <span class="pricing-soon-pill">Coming soon</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="tools-section" aria-label="Automation and tools">
+        <header class="tools-head">
+          <p class="pricing-kicker">Automation</p>
+          <h2 class="pricing-title">Automation &amp; Tools</h2>
+          <p class="sub pricing-sub">Bots and tools designed to help you execute faster and stay consistent.</p>
+        </header>
+
+        <div class="tools-grid">
+          <article class="pricing-card tools-card featured" data-product="crypto-bot">
+            <div class="corner-tag">Popular</div>
+            <header class="pricing-card-head">
+              <h3>Crypto trading bot</h3>
+              <p class="tier-note">One bot for both Spot &amp; Futures execution.</p>
+            </header>
+
+            <div class="price-row">
+              <span class="price">$599</span>
+              <span class="per">one-time</span>
+            </div>
+
+            <ul class="pricing-list">
+              <li>Spot &amp; futures modes with clear rules</li>
+              <li>Risk controls, trade limits, and safety settings</li>
+              <li>Lifetime access to Crypto Signals VIP</li>
+              <li>Works on major exchanges (Binance, ByBit, KuCoin, OKX, Bitget...)</li>
+              <li>Setup support included</li>
+            </ul>
+
+            <a class="btn btn-cta w-full tool-link" href="pay.html?product=crypto-bot">Get the bot</a>
+          </article>
+
+          <article class="pricing-card tools-card" data-product="forex-bot">
+            <header class="pricing-card-head">
+              <h3>Forex trading bot</h3>
+              <p class="tier-note">Automated Forex execution with clear risk controls.</p>
+            </header>
+
+            <div class="price-row">
+              <span class="price">$499</span>
+              <span class="per">one-time</span>
+            </div>
+
+            <ul class="pricing-list">
+              <li>Customisable trading strategies</li>
+              <li>Filters, trade limits, and safety settings</li>
+              <li>Lifetime access to Forex Signals VIP</li>
+              <li>Designed for consistent execution</li>
+              <li>Setup support included</li>
+            </ul>
+
+            <a class="btn btn-cta w-full tool-link" href="pay.html?product=forex-bot">Get the bot</a>
+          </article>
+
+          <article class="pricing-card tools-card" data-product="bundler">
+            <header class="pricing-card-head">
+              <h3>Bundler</h3>
+              <p class="tier-note">Generate wallets and bundle multi-wallet transactions.</p>
+            </header>
+
+            <div class="price-row">
+              <span class="price">$299</span>
+              <span class="per">one-time</span>
+            </div>
+
+            <ul class="pricing-list">
+              <li>Generate multiple wallets quickly</li>
+              <li>Bundle a transaction across multiple wallets</li>
+              <li>Pumpfun compatible</li>
+              <li>Designed for fast, repeatable execution</li>
+            </ul>
+
+            <a class="btn btn-cta w-full tool-link" href="pay.html?product=bundler">Get Bundler</a>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer site-footer-home">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-brand">
+            <img src="AltGuru_PP.png" alt="" class="footer-brand-logo" />
+            <span class="footer-brand-wordmark">ALTGURU</span>
+          </a>
+          <div class="footer-socials" aria-label="Social links">
+            <a
+              class="footer-social-link"
+              href="https://t.me/altguruio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Telegram"
+            >
+              <img class="footer-social-icon" src="assets/icons/telegram-Icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://x.com/AltGuruio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+            >
+              <img class="footer-social-icon" src="assets/icons/x-icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://www.instagram.com/altguru.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img class="footer-social-icon" src="assets/icons/instagram-icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://www.youtube.com/@AltGuruio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube @AltGuruio"
+              title="YouTube @AltGuruio"
+            >
+              <img class="footer-social-icon" src="assets/icons/youtube-icon.svg" width="22" height="22" alt="" decoding="async" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <a href="results.html">Results</a>
+          <a href="news.html">News</a>
+          <a href="./faqs.html">FAQs</a>
+          <a href="signals.html">Signals</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p class="footer-muted">Telegram Channel</p>
+          <p>@AltGuruio</p>
+          <p class="footer-muted">Telegram support</p>
+          <p>@AltGuruSupport</p>
+        </div>
+      </div>
+
+      <div class="footer-disclosure">
+        <h3>Disclaimer</h3>
+        <p>
+          Trading decisions are yours alone. AltGuru Signals is not liable for any loss or harm arising from how you use
+          or ignore anything we publish—on this site, in Telegram, or elsewhere. By using our materials, you agree you
+          do so at your own risk.
+        </p>
+        <p>
+          Nothing we share is personalized financial or investment advice. Our trade ideas and calls are commentary and
+          education: we document how we approach the market and share that process for learning. We will never ask to
+          manage your funds, hold custody of your assets, or trade on your behalf.
+        </p>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p>&copy; AltGuru Trading. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
