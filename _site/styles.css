@@ -4977,17 +4977,17 @@ th {
   }
 
   .service-section .service-bot-visual {
-    height: 230px;
-    min-height: 230px;
-    max-height: 230px;
+    height: 252px;
+    min-height: 252px;
+    max-height: 252px;
     align-items: flex-end;
     padding-bottom: 4px;
   }
 
   .service-section .service-bot-img {
     transform-origin: center bottom;
-    transform: scale(1.06) translateY(10px);
-    margin-top: -4px;
+    transform: scale(1.06) translateY(28px);
+    margin-top: 0;
   }
 
   .how-section {
@@ -5358,6 +5358,14 @@ th {
     grid-template-columns: 1fr;
   }
 
+  .site-footer .footer-col {
+    padding-inline-start: clamp(14px, 4.5vw, 22px);
+  }
+
+  .site-footer .footer-disclosure {
+    padding-inline: clamp(14px, 4.5vw, 22px);
+  }
+
   .footer-bottom-row {
     flex-direction: column;
     align-items: center;
@@ -5616,7 +5624,7 @@ th {
   }
 
   .hero-home .hero-phone-wrap {
-    max-width: min(300px, 82vw);
+    max-width: min(360px, 90vw);
     margin-inline: auto;
   }
 
